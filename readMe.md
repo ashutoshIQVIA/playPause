@@ -1,5 +1,6 @@
-2nd Sep : Included august version
+4sep : WIP
 
+2nd Sep : Included august version
 
 10th Auf version :
 - Javascript code fix based on logs on logs_c object
