@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>slide</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body id="body-container">
+    <div id="main">
+        <!--    <div class="click1" data-prevent-tap="true"></div>
+    <div class="click2"  data-prevent-tap="true"></div>
+    <div class="click3"  data-prevent-tap="true"></div>
+    <div class="click4"  data-prevent-tap="true"></div>
+    <div class="click5"  data-prevent-tap="true"></div>
+    <div class="click6"  data-prevent-tap="true"></div>
+    <div class="click7"  data-prevent-tap="true"></div>
+    <div class="click8"  data-prevent-tap="true"></div>
+    <div class="click9"  data-prevent-tap="true"></div>
+    <div class="click10"  data-prevent-tap="true"></div>
+    <div class="click11"  data-prevent-tap="true"></div>
+    <div class="click12"  data-prevent-tap="true"></div>
+    <div class="click13"  data-prevent-tap="true"></div>
+    <div class="click14"  data-prevent-tap="true"></div>
+    <div class="click15"  data-prevent-tap="true"></div>
+    <div class="click16"  data-prevent-tap="true"></div>
+    <div class="click17"  data-prevent-tap="true"></div>
+    <div class="click18"  data-prevent-tap="true"></div>
+    <div class="click19"  data-prevent-tap="true"></div>
+    <div class="click20"  data-prevent-tap="true"></div>
+    <div class="click21"  data-prevent-tap="true"></div>
+    <div class="click22"  data-prevent-tap="true"></div>-->
+
+
+        <button
+            onClick="parent.pickFromList(['34_Omez_Q1_NorthWest_Slide01','34_Omez_Q1_SouthEast_Slide01','34_Omez_Q2_NorthWest_Slide01','34_Omez_Q2_SouthEast_Slide01'])"
+            class="click1" type="button"></button>
+        <button
+            onClick="parent.pickFromList(['34_Omez_DSR_PLUS_CP_Slide01','34_Omez_DSR_PLUS_GP_Q1_Slide01','34_Omez_DSR_PLUS_GP_Q2_Slide01'])"
+            class="click2" type="button"></button>
+        <button
+            onClick="parent.pickFromList(['34_Nise_CP_Q1_Slide01','34_Nise_CP_Q4_Slide01','34_Nise_GP_Q1_Slide01','34_Nise_GP_Q4_Slide01'])"
+            class="click3" type="button"></button>
+        <button onClick="parent.pickFromList(['34_EasyNise_Slide01'])" class="click4" type="button"></button>
+        <button onClick="parent.pickFromList(['34_Reswas_LS_Slide01'])" class="click5" type="button"></button>
+        <button onClick="parent.pickFromList(['34_Omez_O_ South Zone_Slide01','34_Omez_O_East West_North Zone_Slide01'])" class="click6" type="button"></button>
+        <button
+            onClick="parent.pickFromList(['34_Ultranise_CP_Slide01','34_Ultranise_GP_Slide01','34_Ultranise_Ortho_Slide01','34_Ultranise_Surgeon_Slide01'])"
+            class="click7" type="button"></button>
+        <button onClick="parent.pickFromList(['34_Omez_Insta_Slide01'])" class="click8" type="button"></button>
+        <button onClick="parent.pickFromList(['34_Omez_Antacid_Slide01'])" class="click9" type="button"></button>
+        <button onClick="parent.pickFromList(['34_Wokadine_Gargle_CPGP_Slide01'])" class="click10"
+            type="button"></button>
+
+        <button onClick="parent.pickFromList(['34_Becozinc_slide_01'])" class="click11" type="button"></button>
+        <button onClick="parent.pickFromList(['34_Nisegel_Slide01'])" class="click12" type="button"></button>
+        <button onClick="parent.pickFromList(['34_Gospas_GPCP_Slide01'])" class="click13" type="button"></button>
+        <button onClick="parent.pickFromList(['34_Omez40_slide_01'])" class="click14" type="button"></button>
+        <button onClick="parent.pickFromList(['34_OmezInj_slide_01'])" class="click15" type="button"></button>
+        <button onClick="parent.pickFromList(['34_Relent_slide01'])" class="click16" type="button"></button>
+        <button onClick="parent.pickFromList(['34_BecozincM_CP_Slide01'])" class="click17" type="button"></button>
+        <button onClick="parent.pickFromList(['34_Nise_MDT_Slide01'])" class="click18" type="button"></button>
+        <button onClick="parent.pickFromList(['34_Becozinc_slide_04'])" class="click19" type="button"></button>
+        <button onClick="parent.pickFromList(['34_Proxyvon_Plus_Slide01'])" class="click20" type="button"></button>
+        <button onClick="parent.pickFromList(['34_Emlukast_Slide_01','34_Emlukast_Slide_02','34_Emlukast_Slide_03'])"
+            class="click21" type="button"></button>
+        <button onClick="parent.pickFromList(['34_Leon_GP_Slide01'])" class="click22" type="button"></button>
+        <button onClick="parent.pickFromList(['34_Q2_D1_V1_Gemvert_slide_01'])" class="click23" type="button"></button>
+        <button onClick="parent.pickFromList(['34_Becozinc_G_Slide01'])" class="click24" type="button"></button>
+
+
+
+    </div>
+    <script>
+        let wrapper = document.getElementById('body-container');
+        let outer = document.getElementById('main');
+        let maxWidth = outer.clientWidth;
+        let maxHeight = outer.clientHeight;
+
+
+        window.addEventListener("resize", resize);
+        resize();
+
+
+        function resize() {
+            let scale,
+                width = window.innerWidth,
+                height = window.innerHeight;
+            scale = Math.min(width / maxWidth, height / maxHeight);
+            outer.style.transform = 'scale(' + scale + ')';
+        }
+
+
+        $(document).ready(function () {
+
+            $("").click(function () {
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>

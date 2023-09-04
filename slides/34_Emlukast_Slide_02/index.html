@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>slide</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body  id="body-container">
+<div id="main">
+            <div class="logoclk"  onClick="parent.updateIfram('34_Logo_GP_Slide01')"></div>
+            <div class="img1"></div>
+	
+	
+            <div class="beclk"></div>
+            <div class="fclk"></div>
+            <div class="bcclk"></div>
+   
+    <div class="bepopup popup">
+		<img src="media/images/be.jpg" alt="">
+		<div class="close" data-prevent-tap="true"></div>
+	</div>
+	<div class="fpopup popup">
+		<img src="media/images/f.jpg" alt="">
+		<div class="close" data-prevent-tap="true"></div>
+	</div>
+	<div class="bcpopup popup">
+		<img src="media/images/bc.jpg" alt="">
+		<div class="close" data-prevent-tap="true"></div>
+	</div>
+</div>
+<script>
+let wrapper = document.getElementById('body-container');
+let outer = document.getElementById('main');
+let maxWidth = outer.clientWidth;
+let maxHeight = outer.clientHeight;
+
+ 
+window.addEventListener("resize", resize);
+resize();
+ 
+
+function resize() {
+    let scale,
+        width = window.innerWidth,
+        height = window.innerHeight;
+    scale = Math.min(width / maxWidth, height / maxHeight);
+    outer.style.transform = 'scale(' + scale + ')';
+}
+$(document).ready(function() {
+	$(".beclk").click(function(){ $('.bepopup').fadeIn(500);
+			$(".fclk, .bcclk").hide();							  
+		});
+		$(".fclk").click(function(){ 
+			$('.fpopup').fadeIn(500);
+			$(".beclk, .bcclk").hide();	
+		});
+	$(".bcclk").click(function(){ 
+		$('.bcpopup').fadeIn(500);
+			$(".fclk, .beclk").hide();	
+		});
+			$(".close").click(function(){ $(this).parent().fadeOut(50); 
+				$(".beclk, .fclk, .bcclk").show();							  						
+				});
+					});
+
+
+</script>
+</body>
+</html>

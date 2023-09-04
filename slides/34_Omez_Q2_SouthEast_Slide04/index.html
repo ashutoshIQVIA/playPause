@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>slide</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/anim.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+
+
+</head>
+<body id="body-container">
+<div class="main" id="main">
+
+
+			<div class="bar_1"></div>
+		<div class="bar_2"></div>
+
+
+ <div class="logo" onClick="parent.updateIfram('34_Logo_GP_Slide01')"></div>
+
+	
+</div>
+<script>
+	
+	
+	var wrapper = document.getElementById('body-container');
+var outer = document.getElementById('main');
+var maxWidth = outer.clientWidth;
+var maxHeight = outer.clientHeight;
+
+window.addEventListener("resize", resize);
+resize();
+function resize() {
+var scale,width = window.innerWidth,height = window.innerHeight;
+scale = Math.min(width / maxWidth, height / maxHeight);
+outer.style.transform = 'scale(' + scale + ')';}
+	
+	
+	
+
+	$(document).ready(function(e){
+
+		$(".close1").click(function(){
+			$(".pop1").fadeOut();
+		})
+
+		$(".close2").click(function(){
+			$(".pop2").fadeOut();
+		})
+
+		$(".api").click(function(){
+			$(".pop1").fadeIn();
+		})
+
+		$(".ref").click(function(){
+			$(".pop2").fadeIn();
+		})
+
+	})
+</script>
+
+
+</body>
+</html>

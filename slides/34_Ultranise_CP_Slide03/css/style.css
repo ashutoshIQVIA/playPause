@@ -1,0 +1,97 @@
+@charset "utf-8";
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #FFF;
+}
+body {
+  min-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.logo{
+    position: absolute;
+    top: 70px;
+    left: 170px;
+    width: 690px;
+    height: 150px;
+    z-index: 999;
+    /*border: 1px solid #000;*/
+}
+#main {
+  margin: 0 auto;
+  width: 1024px;
+  height: 768px;
+  transform-origin: 50% 0%;
+  overflow: hidden;
+  background: url("../media/images/bg.jpg") no-repeat;
+  background-size: contain;
+	position: relative;
+}
+
+div{ position: absolute;}
+.content {
+  background: url(../media/images/bg.jpg) no-repeat left top;
+  width: 1024px;
+  height: 768px;
+  background-size: 100% 100%;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+}
+.pop1 {
+	position: absolute;
+	background: url(../media/images/popup1.jpg) no-repeat left top;
+	top: 0px;
+	left: 0px;
+	width: 1024px;
+	height: 768px;
+	display:none;
+}
+.pop2 {
+	position: absolute;
+	background: url(../media/images/popup2.jpg) no-repeat left top;
+	top: 0px;
+	left: 0px;
+	width: 1024px;
+	height: 768px;
+	display:none;
+}
+
+.click1 {
+	position: absolute;
+	top: 521px;
+	left: 311px;
+	width: 135px;
+	height: 136px;
+}
+.click2 {
+	position: absolute;
+	top: 493px;
+	left: 577px;
+	width: 340px;
+	height: 146px;
+}
+
+.close {
+	
+position: absolute;
+	
+top: 74px;
+	
+left: 927px;
+	
+width: 66px;
+	
+height: 66px;
+}
+

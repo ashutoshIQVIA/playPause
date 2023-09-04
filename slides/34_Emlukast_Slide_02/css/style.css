@@ -1,0 +1,110 @@
+@charset "utf-8";
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  min-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+#main {
+  margin: 0 auto;
+  width: 1024px;
+  height: 768px;
+  transform-origin: 50% 0%;
+  overflow: hidden;
+  background: url("../media/images/bg.jpg") no-repeat;
+  background-size: contain;
+}
+.bg1{
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	background:url(../media/images/bg1.jpg) no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+	top: 0px;
+	left: 0px;
+	display:none;
+}
+.img1{
+	position: absolute;
+	width: 237px;
+	height: 66px;
+	background:url("../media/images/img1.png") no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+	top: 670px;
+	left: 253px;
+	animation:gloweffect 1s infinite;
+}
+@keyframes gloweffect{
+	0%{
+		opacity:0;
+	}
+	50%{
+		opacity:1;
+	}
+	100%{
+		opacity:0;
+	}
+}
+
+.beclk {
+    position: absolute;
+   top: 345px;
+    left: 130px;
+    width: 180px;
+    height: 190px;
+	z-index:999;
+}
+.fclk {
+    position: absolute;
+   top: 260px;
+    left: 370px;
+    width: 271px;
+height: 160px;
+	z-index:999;
+}
+.bcclk {
+    position: absolute;
+   top: 340px;
+    left: 707px;
+    width: 227px;
+height: 161px;
+	z-index:999;
+}
+.popup {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    display: none;
+}
+
+.close {
+    position: absolute;
+        top: 260px;
+    left: 855px;
+    width: 60px;
+    height: 55px;
+}
+.logoclk{
+	width: 582px;
+height: 109px;
+background: transparent;
+position: absolute;
+overflow: hidden;
+top: 123px;
+left: 179px;
+}

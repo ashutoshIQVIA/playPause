@@ -1,0 +1,114 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  /* For some Androids */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -moz-touch-callout: none;
+  -o-touch-callout: none;
+  -ms-touch-callout: none;
+  touch-callout: none;
+}
+.main {
+  position: relative;
+  background: url(../media/images/bg.jpg) no-repeat left top;
+  width: 1024px;
+  height: 768px;
+  background-size: 100% 100%;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+}
+.click1, .click2, .click3, .click4 {
+	width: 166px;
+	height: 30px;
+	position: absolute;
+	top: 608px;
+}
+.click1 {
+	left: 127px;
+}
+.click2 {
+	right: 476px;
+}
+.click3 {
+	right: 260px;
+	width: 132px;
+}
+
+.click4 {
+	right: 103px;
+		width: 132px;
+
+}
+
+
+.popup1, .popup2, .popup3, .popup4, .api_popup1, .api_popup2, .api_popup3, .api_popup4 {
+  width: 1024px;
+  height: 768px;
+  position: absolute;
+  display: none;
+	z-index: 99;
+}
+.popup1{   background: url("../media/images/popup1.jpg") no-repeat left top;
+}
+.popup2{   background: url("../media/images/popup2.jpg") no-repeat left top;
+}
+.popup3{   background: url("../media/images/popup3.jpg") no-repeat left top;
+}
+.popup4{   background: url("../media/images/popup4.jpg") no-repeat left top;
+}
+.api_popup1{   background: url("../media/images/api1.jpg") no-repeat left top; 	z-index: 100;
+}
+.api_popup2{   background: url("../media/images/api2.jpg") no-repeat left top;z-index: 100;
+}
+.api_popup3{   background: url("../media/images/api3.jpg") no-repeat left top;z-index: 100;
+}
+.api_popup4{   background: url("../media/images/api4.jpg") no-repeat left top;z-index: 100;
+}
+.close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 335px;
+    right: 103px;
+}
+.api1, .api2, .api3, .api4{         width: 30px;
+    height: 40px;
+    position: absolute;
+    top: 335px;
+    right: 143px;}
+.close1 {
+    width: 23px;
+    height: 22px;
+    position: absolute;
+	background: url("../media/images/close.png");
+        top: 63px;
+    right: 73px;
+
+}
+.logo {
+  width: 466px;
+height: 190px;
+top: 133px;
+left: 276px;
+position: absolute;
+}
+.logo_click{
+    position: absolute;
+    top: 133px;
+    left: 276px;
+    width: 466px;
+    height: 170px;
+    z-index: 999;
+    /*border: 1px solid #000;*/
+}
+
+
+

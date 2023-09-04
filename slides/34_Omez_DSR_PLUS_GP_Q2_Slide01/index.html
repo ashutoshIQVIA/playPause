@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>slide</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/anim.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+  
+</head>
+<body id="body-container">
+<div id="main">   
+    <!-- <div class="logo" onclick="parent.updateIfram('34_Logo_GP_Slide01')"></div> -->
+    <p class="layer"></p>
+    <img src="media/images/text1.png" class="text1">
+    <img src="media/images/text2.png" class="text2">
+</div>
+<script>
+var wrapper = document.getElementById('body-container');
+var outer = document.getElementById('main');
+var maxWidth = outer.clientWidth;
+var maxHeight = outer.clientHeight;
+
+window.addEventListener("resize", resize);
+resize();
+function resize() {
+var scale,width = window.innerWidth,height = window.innerHeight;
+scale = Math.min(width / maxWidth, height / maxHeight);
+outer.style.transform = 'scale(' + scale + ')';}
+ $(document).ready(function(e) {
+	
+    const showtext1 = () => $(".text1").fadeIn();
+	setTimeout(showtext1, 1000)
+
+    const showtext2 = () => $(".text2").fadeIn();
+	setTimeout(showtext2, 2000)
+          
+     
+	
+ });
+</script>
+
+
+</body>
+</html>

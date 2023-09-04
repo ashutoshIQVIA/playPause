@@ -1,0 +1,166 @@
+@charset "utf-8";
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #FFF;
+}
+body {
+  min-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+	overflow: hidden;
+}
+#main {
+  margin: 0 auto;
+  width: 1024px;
+  height: 768px;
+  transform-origin: 50% 0%;
+  overflow: hidden;
+  background: url("../media/images/bg.jpg") no-repeat;
+  background-size: contain;
+	position: relative;
+}
+div {
+  position: absolute;
+}
+.omez-logo {
+    width: 436px;
+    height: 120px;
+    top: 25px;
+    left: 294px;
+    background: url("../media/images/omez-logo.png") no-repeat;
+    animation: logo_ani 1.5s ease 0.5s forwards;
+	opacity: 0;
+}
+@keyframes logo_ani {
+  0% {
+    opacity: 0;
+/*	  transform: scale(0)*/
+  }
+		  100% {
+    opacity: 1;
+/*			  transform: scale(1)
+*/
+  }
+	
+	
+}
+
+.text1 {
+    width: 798px;
+    height: 111px;
+    background: url("../media/images/text1.png") no-repeat;
+    top: 25px;
+    left: 116px;
+    animation: tx1_ani 1s ease 1s forwards;
+    opacity: 0;
+}
+@keyframes tx1_ani {
+  0% {
+    opacity: 0;
+	  top: 250px;
+	  transform: scale(0);
+  }
+		  100% {
+    opacity: 1;
+			  top: 208px;
+			  transform: scale(1);
+
+  }
+	
+	
+}.one {
+    width: 261px;
+    height: 236px;
+    background: url("../media/images/one.png") no-repeat;
+    top: 436px;
+    left: 63px;
+    animation: tx2_ani 1s ease 2s forwards;
+    opacity: 0;
+}
+@keyframes tx2_ani {
+  0% {
+    opacity: 0;
+	  transform: scale(1.5);
+  }
+		  25% {
+    opacity: 1;
+			  transform: scale(1.5);
+
+  }
+		  50% {
+    opacity: 1;
+			  transform: scale(1);
+
+  }
+			  75% {
+    opacity: 1;
+			  transform: scale(1.5);
+
+  }	
+			  100% {
+    opacity: 1;
+			  transform: scale(1);
+
+  }	
+}
+
+.i {
+    width: 26px;
+    height: 26px;
+    background: url("../media/images/i.png") no-repeat;
+    top: 627px;
+    left: 332px;
+    animation: i_ani 1s ease 3s forwards;
+    opacity: 0;
+}
+@keyframes i_ani {
+  0% {
+    opacity: 0;
+  }
+			  100% {
+    opacity: 1;
+
+  }	
+}
+.grf{
+    width: 593px;
+    height: 375px;
+    background: url("../media/images/grf.png") no-repeat;
+    top: 348px;
+    left: 375px;
+    animation: grf_ani 1s ease 3.5s forwards;
+    opacity: 0;
+}
+@keyframes grf_ani {
+  0% {
+    opacity: 0;
+  }
+			  100% {
+    opacity: 1;
+
+  }	
+}
+.i_popup{
+    width: 1024px;
+    height: 768px;
+    background: url("../media/images/i_popup.png") no-repeat;
+    top: 0;
+    left: 0;	display: none;
+
+}
+.close{
+    width: 50px;
+    height: 50px;
+    top: 45px;
+    left: 931px;
+}

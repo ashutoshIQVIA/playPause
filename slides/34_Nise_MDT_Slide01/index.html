@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>slide</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/anim.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body  id="body-container">
+<div id="main">
+
+		<div class="bg1"></div>
+		<div class="bg2"></div>
+		<div class="bg3"></div>
+		<div class="bg4"></div>
+		<div class="bg5"></div>
+		<div class="bg6"></div>
+		<div class="bg7">
+			<div class="img1 animated flash"></div>
+		</div>
+		<div class="logo" onClick="parent.updateIfram('34_Logo_GP_Slide01')"></div>
+
+    </div>
+<script>
+let wrapper = document.getElementById('body-container');
+let outer = document.getElementById('main');
+let maxWidth = outer.clientWidth;
+let maxHeight = outer.clientHeight;
+
+ 
+window.addEventListener("resize", resize);
+resize();
+ 
+
+function resize() {
+    let scale,
+        width = window.innerWidth,
+        height = window.innerHeight;
+    scale = Math.min(width / maxWidth, height / maxHeight);
+    outer.style.transform = 'scale(' + scale + ')';
+}
+
+$(document).ready(function () { 			
+			
+			setTimeout(function(){ $(".bg2").fadeIn(); }, 500);
+			setTimeout(function(){ $(".bg3").fadeIn(); }, 1000);
+			setTimeout(function(){ $(".bg4").fadeIn(); }, 1500);
+			setTimeout(function(){ $(".bg5").fadeIn(); }, 2000);
+			setTimeout(function(){ $(".bg6").fadeIn(); }, 2500);
+			setTimeout(function(){ $(".bg7").fadeIn(); }, 3000);
+			setTimeout(function(){ $(".img1").fadeIn(); }, 3500);
+			$(".ref").click(function(){ $('.refpopup').fadeIn(500); });
+			$(".close").click(function(){ $(this).parent().fadeOut(50); });
+
+	});
+</script>
+</body>
+</html>

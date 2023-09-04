@@ -1,0 +1,136 @@
+@charset "utf-8";
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  min-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#main {
+  margin: 0 auto;
+  width: 1024px;
+  height: 768px;
+  transform-origin: 50% 0%;
+  overflow: hidden;
+  background: url("../media/images/bg.png") no-repeat;
+  background-size: contain;
+}
+.s2_bg {
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url(../media/images/bg2.png);
+  background-size: 100% 100%;
+  display: none;
+}
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .clk {
+  position: absolute;
+  background-repeat: no-repeat;
+  display: none;
+}
+.clk {
+  width: 32px;
+  height: 32px;
+  right: 26px;
+  bottom: 100px;
+  display: block;
+  background: url(../media/images/book.png);
+}
+.img1 {
+  width: 212px;
+  height: 61px;
+  overflow: hidden;
+  top: 87px;
+  left: 343px;
+  background: url(../media/images/img1.png);
+  background-size: 100% 100%;
+  z-index: 1;
+}
+.img2 {
+  width: 472px;
+  height: 111px;
+  overflow: hidden;
+  position: absolute;
+  top: 435px;
+  left: 0px;
+  background: url(../media/images/img2.png);
+  background-size: 100% 100%;
+  z-index: 2;
+  opacity: 1;
+  transition: all 1s ease 0s;
+  display: block
+}
+.img3 {
+  width: 442px;
+  height: 561px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 419px;
+  ;
+  background: url(../media/images/img3.png);
+  background-size: 100% 100%;
+  z-index: 999;
+}
+@keyframes example {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 100%;
+    opacity: 0
+  }
+}
+.pop {
+  position: absolute;
+  overflow: hidden;
+  width: 1024px;
+  height: 768px;
+  background-image: url(../media/images/p.png);
+  background-size: 100% 100%;
+  display: block;
+  left: 0px;
+  top: 0px;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all .4s ease 0s;
+  transition: all .4s ease 0s;
+  z-index: 999;
+}
+.pop1.open, .pop.open, .pop2.open {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  /*box-shadow: 0px 0px 5px black;border-radius: 4px;*/
+}
+.close {
+  z-index: 99;
+  left: 783px;
+  top: 223px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  background-image: url(../media/images/close.png)
+}
+.homeLogo {
+  left: 692px;
+  top: 523px;
+  width: 202px;
+  height: 52px;
+  position: absolute;
+}

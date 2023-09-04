@@ -1,0 +1,159 @@
+@charset "utf-8";
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  min-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+#main {
+  margin: 0 auto;
+  width: 1024px;
+  height: 768px;
+  transform-origin: 50% 0%;
+  overflow: hidden;
+  background-size: contain;
+}
+
+.bg1{
+	 position: absolute;
+    background: url(../media/images/bg.jpg) no-repeat left top;
+    width: 1024px;
+    height: 768px;
+    background-size: 100% 100%;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+}
+.bg2{
+	 position: absolute;
+    background: url(../media/images/bg2.jpg) no-repeat left top;
+    width: 1024px;
+    height: 768px;
+    background-size: 100% 100%;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+	display:none;
+}
+.bg3{
+	 position: absolute;
+    background: url(../media/images/bg3.jpg) no-repeat left top;
+    width: 1024px;
+    height: 768px;
+    background-size: 100% 100%;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+	display:none;
+}
+.bg4{
+	 position: absolute;
+    background: url(../media/images/bg4.jpg) no-repeat left top;
+    width: 1024px;
+    height: 768px;
+    background-size: 100% 100%;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+	display:none;
+}
+.bg5{
+	 position: absolute;
+    background: url(../media/images/bg5.jpg) no-repeat left top;
+    width: 1024px;
+    height: 768px;
+    background-size: 100% 100%;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+	display:none;
+}
+.bg6{
+	 position: absolute;
+    background: url(../media/images/bg6.jpg) no-repeat left top;
+    width: 1024px;
+    height: 768px;
+    background-size: 100% 100%;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+	display:none;
+}
+.bg7{
+	 position: absolute;
+    background: url(../media/images/bg7.jpg) no-repeat left top;
+    width: 1024px;
+    height: 768px;
+    background-size: 100% 100%;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+	display:none;
+}
+.img1{
+	 position: absolute;
+    background: url("../media/images/img1.png") no-repeat left top;
+    width: 240px;
+    height: 26px;
+    background-size: 100% 100%;
+    overflow: hidden;
+	top: 641px;
+	left: 683px;
+	display:none;
+	-webkit-animation-iteration-count: infinite;
+animation-iteration-count: infinite;
+}
+.ref {
+    position: absolute;
+    top: 658px;
+    left: 966px;
+    width: 27px;
+    height: 28px;
+	z-index:999;
+}
+
+.popup {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    display: none;
+}
+
+.close {
+    position: absolute;
+    top: 167px;
+    left: 875px;
+    width: 32px;
+    height: 32px;
+}
+
+.imgs {
+    position: absolute;
+    left: 630px;
+    top: 283px;
+    display: none;
+}
+
+
+.logo{       
+	 position: absolute;
+	width: 375px;
+    height: 167px;
+    right: 60px;
+    bottom: 81px;
+background:transparent;
+}
+	

@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>slide</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/animate.min.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body  id="body-container">
+<div id="main">
+	<div class="logo"></div>
+</div>
+<script>
+let wrapper = document.getElementById('body-container');
+let outer = document.getElementById('main');
+let maxWidth = outer.clientWidth;
+let maxHeight = outer.clientHeight;
+
+ 
+window.addEventListener("resize", resize);
+resize();
+ 
+
+function resize() {
+    let scale,
+        width = window.innerWidth,
+        height = window.innerHeight;
+    scale = Math.min(width / maxWidth, height / maxHeight);
+    outer.style.transform = 'scale(' + scale + ')';
+}
+	
+	var main = document.getElementById("main");
+		let img1 = document.createElement('div');
+	img1.id = 'img1';
+
+	main.appendChild( img1 );
+	setTimeout(function(){
+		document.getElementById('img1').style.visibility="visible";
+		img1.classList.add("animate__animated", "animate__zoomIn");
+	},500);
+	
+	
+	let img2 = document.createElement('div');
+	img2.id = 'img2';
+
+	main.appendChild( img2 );
+	setTimeout(function(){
+		document.getElementById('img2').style.visibility="visible";
+		img2.classList.add("animate__animated", "animate__slideInLeft");
+	},800);
+   $(document).ready(function(e) {
+	   
+	   $(".click").click(function(){
+		$(".popup").fadeIn("slow");
+     
+	}); 
+		$(".close").click(function(){
+		$(".popup").fadeOut("slow");
+     
+	}); 
+		}); 
+
+
+</script>
+</body>
+</html>

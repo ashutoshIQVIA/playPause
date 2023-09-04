@@ -1,0 +1,115 @@
+@charset "utf-8";
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #FFF;
+}
+body {
+  min-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+	overflow: hidden;
+}
+#main {
+  margin: 0 auto;
+  width: 1024px;
+  height: 768px;
+  transform-origin: 50% 0%;
+  overflow: hidden;
+  background: url("../media/images/bg.jpg") no-repeat;
+  background-size: contain;
+	position: relative;
+}
+div {
+  position: absolute;
+}
+.logo{
+    width: 647px;
+    height: 154px;
+    background: url("../media/images/logo.jpg") no-repeat;
+    top: 0px;
+    left: 186px;
+    animation: logo_ani 1.5s ease 0.5s forwards;
+	opacity: 0;
+}
+@keyframes logo_ani {
+  0% {
+    opacity: 0;
+/*	  transform: scale(0)*/
+  }
+		  100% {
+    opacity: 1;
+/*			  transform: scale(1)
+*/
+  }
+	
+	
+}.pack {
+    width: 638px;
+    height: 361px;
+    background: url("../media/images/pack.png") no-repeat;
+    top: 165px;
+    left: 41px;
+    animation: tx2_ani 0.5s ease 1s forwards;
+    opacity: 0;
+}
+@keyframes tx2_ani {
+  0% {
+    opacity: 0;
+	  transform: scale(1.5);
+  }
+
+			  100% {
+    opacity: 1;
+			  transform: scale(1);
+
+  }	
+}
+
+.s {
+    width: 159px;
+    height: 158px;
+    background: url("../media/images/s.png") no-repeat;
+    top: 317px;
+    left: 469px;
+    animation: twoX_text_ani 1s ease 1.5s forwards;
+    opacity: 0;
+}
+@keyframes twoX_text_ani {
+  0% {
+    opacity: 0;
+  }
+			  100% {
+    opacity: 1;
+
+  }	
+}
+.text{
+    width: 286px;
+    height: 0;
+    background: url("../media/images/text.png") no-repeat;
+    top: 308px;
+    left: 612px;
+    animation: grf_ani 1s ease 2s forwards;
+    opacity: 0;
+}
+@keyframes grf_ani {
+  0% {
+    opacity: 0;
+	  height: 0px;
+  }
+			  100% {
+    opacity: 1;
+				  height: 170px;
+
+  }	
+}

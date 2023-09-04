@@ -1,0 +1,222 @@
+@charset "utf-8";
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #FFF;
+}
+body {
+  min-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+#main {
+  margin: 0 auto;
+  width: 1024px;
+  height: 768px;
+  transform-origin: 50% 0%;
+  overflow: hidden;
+  background-size: contain;
+  position: relative;
+}
+div {
+  position: absolute;
+}
+.bg1{
+  width: 1024px;
+  height: 768px;
+  transform-origin: 50% 0%;
+  overflow: hidden;
+  background: url("../media/images/bg0.jpg") no-repeat;	
+	
+	
+}
+
+
+.sparks {
+  width: 1024px;
+  height: 768px;
+  top: 0;
+  left: 0;
+  background: url("../media/images/temp.png") no-repeat;
+  animation: sp_ani 1.5s ease 1s infinite;
+  opacity: 0;
+}
+@keyframes sp_ani {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+.glow {
+  width: 1024px;
+  height: 768px;
+  top: 0;
+  left: 0;
+  background: url("../media/images/glow.png") no-repeat;
+  animation: glow_ani 1.5s ease 0.1s forwards;
+  opacity: 0;
+}
+@keyframes glow_ani {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.omez_logo1 {
+  width: 462px;
+  height: 194px;
+  top: 254px;
+  left: 287px;
+  background: url("../media/images/omez-logo.svg") no-repeat;
+  animation: omez_logo1_ani 1.5s ease 1s forwards;
+  opacity: 0;
+}
+@keyframes omez_logo1_ani {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  75% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  95% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.omez_logo2 {
+  width: 475px;
+  height: 170px;
+  top: 254px;
+  left: 287px;
+  background: url("../media/images/omez-logo1.svg") no-repeat;
+  animation: omez_logo2_ani 1.5s ease 2.2s forwards;
+  opacity: 0;
+}
+@keyframes omez_logo2_ani {
+  0% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  100% {
+    top: 127px;
+    left: 285px;
+    opacity: 1;
+    transform: scale(1.09);
+  }
+}
+.omez_logo3 {
+  width: 554px;
+  height: 180px;
+  top: 385px;
+  left: 244px;
+  background: url("../media/images/omez-logo2.svg") no-repeat;
+  animation: omez_logo3_ani 1.5s ease 3s forwards;
+  opacity: 0;
+}
+@keyframes omez_logo3_ani {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.4);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+}
+.bg2{
+  width: 1024px;
+  height: 768px;
+  transform-origin: 50% 0%;
+  overflow: hidden;
+  background: url("../media/images/bg2.jpg") no-repeat;	
+	display: none;
+	
+}
+.bg2_omez-logo {
+    width: 334px;
+    height: 113px;
+    top: 95px;
+    left: 64px;
+    background: url("../media/images/bg2_omez-logo.png") no-repeat;
+    animation: bg2logo_ani 1s ease 0.5s forwards;
+	opacity: 0;
+}
+@keyframes bg2logo_ani {
+  0% {
+    opacity: 0;
+	  transform: scale(0)
+  }
+		  100% {
+    opacity: 1;
+			  	  transform: scale(1)
+
+
+  }
+	
+	
+}
+.s {
+    width: 243px;
+    height: 241px;
+    top: 262px;
+    left: 10px;
+    background: url("../media/images/s.png") no-repeat;
+    animation: s_ani 1s ease 2s forwards;
+	opacity: 0;
+}
+@keyframes s_ani {
+  0% {
+    opacity: 0;
+	  transform: scale(0)
+  }
+		  100% {
+    opacity: 1;
+			  	  transform: scale(1);
+left: 109px;
+
+  }
+	
+	
+}
+
+
+
+
+
+
+
+
+
+

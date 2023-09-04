@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>slide</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body  id="body-container">
+<div id="main">
+	
+<div class="bg1">
+	<div class="sparks"></div>
+	<div class="glow"></div>
+	<div class="omez_logo1" onclick="parent.updateIfram('34_Logo_GP_Slide01')"></div>
+	<div class="omez_logo2"></div>	
+	<div class="omez_logo3"></div>
+</div>
+<div class="bg2">
+	<div class="s"></div>
+	<div class="bg2_omez-logo" onclick="parent.updateIfram('34_Logo_GP_Slide01')"></div>
+</div>
+	
+</div>
+<script>
+var wrapper = document.getElementById('body-container');
+var outer = document.getElementById('main');
+var maxWidth = outer.clientWidth;
+var maxHeight = outer.clientHeight;
+
+ 
+window.addEventListener("resize", resize);
+resize();
+ 
+
+function resize() {
+    let scale,
+        width = window.innerWidth,
+        height = window.innerHeight;
+    scale = Math.min(width / maxWidth, height / maxHeight);
+    outer.style.transform = 'scale(' + scale + ')';
+}
+$(document).ready(function() {
+		$(".ref").on("click",function(){	
+		 $(".ref_pop").fadeIn("slow");
+	});
+		$(".close").on("click",function(){	
+		 $(".ref_pop").fadeOut("slow");
+	});	
+	
+	  setTimeout(function() { 
+       $(".bg2").fadeIn("slow");
+    }, 7000);
+	
+	
+	});
+	
+
+</script>
+</body>
+</html>

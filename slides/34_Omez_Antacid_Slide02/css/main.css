@@ -1,0 +1,117 @@
+@charset "utf-8";
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  min-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+#main {
+  margin: 0 auto;
+  width: 1024px;
+  height: 768px;
+  transform-origin: 50% 0%;
+  overflow: hidden;
+  background: url("../media/images/bg1.jpg") no-repeat;
+  background-size: contain;
+}
+/*Slide1 style*/
+
+.text_1 {
+	width: 368px;
+	height: 159px;
+	position: absolute;
+	top: 60px;
+	left: 198px;
+	background: url(../media/images/text_1.png) no-repeat top left;
+	opacity: 0;
+	animation: ani1 0.5s 0.5s forwards;
+}
+@keyframes ani1{
+	0%{
+		opacity: 0;
+		
+	}
+		100%{
+		opacity: 1;
+		
+	}
+
+}
+.text_2 {
+	width: 370px;
+	height: 151px;
+	position: absolute;
+	top: 452px;
+	left: 607px;
+	background: url(../media/images/text_2.png) no-repeat top left;
+	opacity: 0;
+	animation: ani1 0.5s 2.5s forwards;
+}
+.bottle {
+	width: 358px;
+	height: 488px;
+	position: absolute;
+	top: 259px;
+	left: 296px;
+	background: url(../media/images/bottle.png) no-repeat top left;
+	opacity: 0;
+	animation: ani2 0.5s 2s forwards;
+}
+.hand {
+	width: 356px;
+	height: 618px;
+	position: absolute;
+	top: 129px;
+	left: 0px;
+	background: url(../media/images/hand.png) no-repeat top left;
+	opacity: 0;
+	animation: ani5 0.5s 1.5s forwards;
+}
+@keyframes ani5{
+	
+	0%{
+		opacity: 0; left:-30px;
+
+	}
+	
+		100%{
+		opacity: 1; left:0px;
+	}
+
+}
+
+.logo {
+	width: 411px;
+	height: 164px;
+	position: absolute;
+	top: 63px;
+	left: 555px;
+	background: url(../media/images/logo.png) no-repeat top left;
+	opacity: 0;
+	animation: ani2 0.5s 1s forwards;
+	transform: scale(0.2,0.2);
+}
+@keyframes ani2{
+	
+	0%{
+		opacity: 0; transform: scale(0.2,0.2);
+
+	}
+	
+		100%{
+		opacity: 1; transform: scale(1,1);
+	}
+
+}

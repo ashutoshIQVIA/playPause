@@ -1,0 +1,108 @@
+@charset "utf-8";
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  min-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+#main {
+  margin: 0 auto;
+  width: 1024px;
+  height: 768px;
+  transform-origin: 50% 0%;
+  overflow: hidden;
+  background: url("../media/images/bg.jpg") no-repeat;
+  background-size: contain;
+}
+.img1 {
+    position: absolute;overflow:hidden;
+    width: 384px;
+	height:93px;
+    background: url(../media/images/img1.png);
+    display: block;
+    top: 96px;
+    left: 119px;
+   
+}
+.logo{
+	position: absolute;
+    bottom: 103px;
+    right: 236px;
+    width: 546px;
+    height: 153px;
+    z-index: 9;
+  
+}
+.Ref{
+	    width: 53px;
+    height: 49px;
+    background: transparent;
+    position: absolute;
+    /* border-radius: 50%; */
+    top: 708px;
+    right: 20px;
+}
+.pop {
+    position: absolute;overflow:hidden;
+    width: 1024px;
+	height:768px;
+    background: url(../media/images/ref.jpg);
+    display: block;
+    left: 0px;
+    top: 0px;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+}
+.open{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.close {
+   /* z-index: 99;*/
+       right: 67px;
+    top: 254px;
+    width: 45px;
+    height: 45px;
+	background: transparent;
+    position: absolute;
+}
+.ref{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 1024px;
+    height: 768px;
+  
+}
+.pop1{
+    position: absolute;
+    background-image: url("../media/images/2.jpg");
+    width: 1024px;
+    height: 768px;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+.pop2{
+    position: absolute;
+    background-image: url("../media/images/3.jpg");
+    width: 1024px;
+    height: 768px;
+    top: 0px;
+    left: 0px;
+    display: none;
+}

@@ -1,0 +1,109 @@
+@charset "utf-8";
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  min-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+#main {
+  margin: 0 auto;
+  width: 1024px;
+  height: 768px;
+  transform-origin: 50% 0%;
+  overflow: hidden;
+  background: url("../media/images/main.jpg") no-repeat;
+  background-size: contain;
+}
+
+.img1{
+	position: absolute;
+	background: url("../media/images/img1.png") no-repeat left top;
+	width: 208px;
+	height: 175px;
+	overflow: hidden;
+	top: 560px;
+    left: 410px;
+	
+	-webkit-animation-name: stamp;
+  animation-name: stamp;
+  animation-delay:1s;
+  -webkit-animation-delay:1s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  opacity: 0;
+  -webkit-animation-fill-mode:forwards;
+   animation-fill-mode:forwards;
+}
+@-webkit-keyframes stamp{
+  0%{
+   opacity:.20;
+    transform-origin: 50% 50%;
+    transform: rotate(-2deg) scale(5);
+    transition: all .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  }
+  10%{
+    opacity:.50;
+    transform-origin: 50% 50%;
+    transform: rotate(-2deg) scale(5);
+    transition: all .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  }
+  100%{
+    opacity:1;
+    transform: rotate(-15deg) scale(1);
+  }
+}
+.homelogo {
+	width: 786px;
+	height: 164px;
+	display: block;
+	top: 222px;
+	left: 123px;
+	position:absolute;
+	background: transparent;
+}
+.ref{
+	position: absolute;
+	background-image: url("../media/images/ref.png");
+	width: 50px;
+	height: 50px;
+	bottom: 100px;
+	right: 50px;
+}
+.pop{
+	position: absolute;
+	background-image: url("../media/images/pop.jpg");
+	width: 1024px;
+	height: 768px;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+.close{
+	position: absolute;
+	background-image: url("../media/images/close.png");
+	width: 48px;
+	height: 48px;
+	top: 50px;
+	right: 50px;
+}
+.logo{
+  width: 786px;
+	height: 164px;
+	display: block;
+	top: 222px;
+	left: 123px;
+	position:absolute;
+	background: transparent; 
+}

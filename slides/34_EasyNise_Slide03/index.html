@@ -1,0 +1,56 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Slide01</title>
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body id="body-container">
+<div id="main">    
+    <div class="container">
+		<div class="thumb_hide" data-prevent-tap="true"></div>
+
+	
+
+
+    </div>
+    </div>
+    <script>   
+    
+    
+    
+	var wrapper = document.getElementById('body-container');
+var outer = document.getElementById('main');
+var maxWidth = outer.clientWidth;
+var maxHeight = outer.clientHeight;
+
+window.addEventListener("resize", resize);
+resize();
+function resize() {
+var scale,width = window.innerWidth,height = window.innerHeight;
+scale = Math.min(width / maxWidth, height / maxHeight);
+outer.style.transform = 'scale(' + scale + ')';}
+    
+    
+    
+    $(document).ready(function() {
+
+		        $(".ref").click(function(){
+            $(".pop").fadeIn();
+        });
+        $(".api").click(function(){
+            $(".pop1").fadeIn();
+        });
+        $(".close").click(function(){
+            $(".pop,.pop1").fadeOut();
+        });
+
+    });
+    
+    </script>
+
+
+</body>
+</html>

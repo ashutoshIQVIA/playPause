@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Slide1</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/animate.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div class="main">
+    <div class="logo_click" onClick="parent.updateIfram('34_Logo_GP_Slide01')"></div>
+	<div class="logo" data-prevent-tap="true"></div>
+	<div class="click1" data-prevent-tap="true"></div>
+  <div class="popup1"><div class="close"></div> <div class="api1"></div></div>
+	
+	<div class="click2" data-prevent-tap="true"></div>
+  <div class="popup2"><div class="close"></div><div class="api2"></div></div>
+	
+	<div class="click3" data-prevent-tap="true"></div>
+  <div class="popup3"><div class="close"></div><div class="api3"></div></div>
+
+	<div class="click4" data-prevent-tap="true"></div>
+  <div class="popup4"><div class="close"></div><div class="api4"></div></div>
+	
+	<div class="api_popup1"><div class="close1"></div></div>
+	<div class="api_popup2"><div class="close1"></div></div>
+	<div class="api_popup3"><div class="close1"></div></div>
+	<div class="api_popup4"><div class="close1"></div></div>
+	
+</div>
+</body>
+</html>
+<script>
+
+$(document).ready(function(e) {
+		$(".click1").click(function(){
+		$(".popup1").fadeIn("slow");
+     
+	}); 
+	
+		$(".click2").click(function(){
+		$(".popup2").fadeIn("slow");
+     
+	});	
+		$(".click3").click(function(){
+		$(".popup3").fadeIn("slow");
+     
+	});	
+		$(".click4").click(function(){
+		$(".popup4").fadeIn("slow");
+     
+	});	
+			$(".api1").click(function(){
+		$(".api_popup1").fadeIn("slow");
+     
+	});	
+			$(".api2").click(function(){
+		$(".api_popup2").fadeIn("slow");
+     
+	});		
+			$(".api3").click(function(){
+		$(".api_popup3").fadeIn("slow");
+     
+	});	
+				$(".api4").click(function(){
+		$(".api_popup4").fadeIn("slow");
+     
+	});	
+	
+		$(".close").click(function(){
+		$(".popup1, .popup2, .popup3, .popup4").fadeOut("slow");
+     
+	}); 
+			$(".close1").click(function(){
+		$(".api_popup1, .api_popup2, .api_popup3, .api_popup4").fadeOut("slow");
+     
+	}); 
+	$(".logo").click(function(){
+		window.parent.navigateToSequence('34_Logo_Dental_Slide01');
+		window.parent.navigateToSequence('34_Logo_GP_Slide01');
+		window.parent.navigateToSequence('34_Logo_GP_Slide02');
+		window.parent.navigateToSequence('34_Logo_GP_Slide03');
+		window.parent.navigateToSequence('34_Logo_GP_Slide04');
+		window.parent.navigateToSequence('34_Logo_GP_Slide05');
+		window.parent.navigateToSequence('34_Logo_GP_Slide06');
+		window.parent.navigateToSequence('34_Logo_GP_Slide07');
+		window.parent.navigateToSequence('34_Logo_GP_Slide08');
+		window.parent.navigateToSequence('34_Logo_GP_Slide09');
+		window.parent.navigateToSequence('34_Logo_GP_Slide10');
+		window.parent.navigateToSequence('34_Logo_GP_Slide11');
+		window.parent.navigateToSequence('34_Logo_GP_Slide12');
+		window.parent.navigateToSequence('34_Logo_GP_Slide13');
+		window.parent.navigateToSequence('34_Logo_GP_Slide14');
+		window.parent.navigateToSequence('34_Logo_GP_Slide15');
+		window.parent.navigateToSequence('34_Logo_GP_Slide16');
+		window.parent.navigateToSequence('34_Logo_CP_Slide01');
+		window.parent.navigateToSequence('34_Logo_CP_Slide02');
+		window.parent.navigateToSequence('34_Logo_CP_Slide03');
+		window.parent.navigateToSequence('34_Logo_CP_Slide04');
+		window.parent.navigateToSequence('34_Logo_CP_Slide05');
+		window.parent.navigateToSequence('34_Index_ENT_Slide01');
+		window.parent.navigateToSequence('34_Index_ENT_Slide02');
+		window.parent.navigateToSequence('34_Index_ENT_Slide03');
+		window.parent.navigateToSequence('34_Index_ENT_Slide04');
+		window.parent.navigateToSequence('34_Logo_Surgeon_Slide01');
+		window.parent.navigateToSequence('34_Logo_Surgeon_Slide02');
+		window.parent.navigateToSequence('34_Logo_Surgeon_Slide03');
+		window.parent.navigateToSequence('34_Logo_Surgeon_Slide04');
+		window.parent.navigateToSequence('34_Logo_Ortho_Slide01');
+		window.parent.navigateToSequence('34_Logo_Ortho_Slide02');
+		window.parent.navigateToSequence('34_Logo_Ortho_Slide03');
+	});	
+
+});
+
+	
+</script>

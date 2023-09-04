@@ -1,0 +1,267 @@
+@charset "utf-8";body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);-webkit-tap-highlight-color:transparent;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;-webkit-touch-callout:none;-moz-touch-callout:none;-o-touch-callout:none;-ms-touch-callout:none;touch-callout:none}
+#main{position:relative;background:url(../media/images/bg.jpg) no-repeat left top;width:1024px;height:768px;background-size:100% 100%;overflow:hidden;top:0px;left:0px}
+#ref{position:absolute;background:url(../media/images/reference.jpg) no-repeat left top;width:1024px;height:768px;background-size:100% 100%;overflow:hidden;top:0px;left:0px;visibility: hidden;}
+#api{position:absolute;background:url(../media/images/reference.jpg) no-repeat left top;width:1024px;height:768px;background-size:100% 100%;overflow:hidden;top:0px;left:0px;visibility: hidden;}
+#img1 {
+    position: absolute;
+    background: url("../media/images/img1.png") no-repeat left top;
+    width: 143px;
+    height: 144px;
+    top: 266px;
+    left: 329px;
+    visibility: hidden;
+	transition-duration: 1s;
+  transition-timing-function: linear;
+	 
+}
+#img2 {
+    position: absolute;
+    background: url("../media/images/img2.png") no-repeat left top;
+    width: 159px;
+    height: 159px;
+    top: 259px;
+	left: 321px;
+    visibility: hidden;
+	transition-duration: 1s;
+  transition-timing-function: linear;
+}
+#img3 {
+    position: absolute;
+    background: url("../media/images/img3.png") no-repeat left top;
+    width: 25px;
+    height: 20px;
+    top: 522px;
+    left: 664px;
+    visibility: hidden;
+	transition-duration: 1s;
+  transition-timing-function: linear;
+	animation-iteration-count:infinite;
+}
+#img4 {
+    position: absolute;
+    background: url("../media/images/img4.png") no-repeat left top;
+    width: 142px;
+    height: 144px;
+   	top: 270px;
+	left: 434px;
+    visibility: hidden;
+	transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.anim {
+  
+    -webkit-animation: 1.5s anim1 ease-in infinite;
+    -webkit-animation-fill-mode: both;
+    
+        animation: 1.5s anim1 ease-in infinite;
+     animation-fill-mode: both;
+    
+}
+ @-webkit-keyframes anim1 {
+ 0% {opacity:0.2;}
+
+ 50% {opacity:1;}
+ 100% { opacity:0.2;}
+}
+
+ @keyframes anim1 {0% {opacity:0.2;}
+
+ 50% { opacity:1;}
+ 100% { opacity:0.2;}
+}
+#img5 {
+    position: absolute;
+    background: url("../media/images/img5.png") no-repeat left top;
+    width: 519px;
+    height: 327px;
+    top: 115px;
+    left: 460px;
+    visibility: hidden;
+	transition-duration: 1s;
+  transition-timing-function: linear;
+}
+#refclk{
+	width: 70px;
+	height: 70px;
+	background: transparent;
+	position: absolute;
+	overflow: hidden;
+	top: 675px;
+	right: 15px;
+	z-index:999;
+}
+#apiclk{
+	width: 70px;
+	height: 70px;
+	background: transparent;
+	position: absolute;
+	overflow: hidden;
+	top: 675px;
+	left: 852px;
+	z-index:999;
+}
+#refclose{
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	position: absolute;
+	overflow: hidden;
+	top: 132px;
+	left: 756px;
+	visibility: hidden;
+}
+#apiclose{
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	position: absolute;
+	overflow: hidden;
+	top: 132px;
+	left: 756px;
+	visibility: hidden;
+}
+#bottom{
+	position: absolute;
+	width: 1024px;
+	height: 180px;
+	background: transparent;
+	overflow: hidden;
+	left: 0px;
+	bottom:0px;
+	z-index:998;
+}
+#logoclk{
+	position: absolute;
+	width: 305px;
+	height: 220px;
+	background: transparent;
+	overflow: hidden;
+	top: 40px;
+	left:675px;
+}
+.click1{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 460px;
+	left: 400px;
+	z-index: 999;
+}
+.click2{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 641px;
+	left: 400px;
+	z-index: 999;
+}
+.click3{
+	position: absolute;
+	width: 78px;
+	height: 74px;
+	top: 667px;
+	left: 820px;
+	z-index: 999;
+}
+.click4{
+	position: absolute;
+	width: 78px;
+	height: 74px;
+	top: 667px;
+	left: 902px;
+	z-index: 999;
+}
+.pop1{
+	position: absolute;
+	background: url(../media/images/reference.jpg);
+	width: 1024px;
+	height: 768px;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+.pop2{
+	position: absolute;
+	background: url(../media/images/api.png);
+	width: 1024px;
+	height: 768px;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+.close1{
+	position: absolute;
+	width: 46px;
+	/* height: 25px; */
+	top: 44px;
+	right: 52px;
+	/* display: none; */
+}
+.close2{
+    position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 185px;
+    right: 125px; 
+}
+.one{
+position: absolute;
+top: 527px;
+left: 356px;
+width: 150px;
+}
+.two{
+	position: absolute;
+	top: 527px;
+	left: 529px;
+	width: 150px;
+}
+.api{
+	position: absolute;
+	top: 661px;
+	left: 914px;
+	width: 72px;
+}
+
+
+*,
+*:before,
+*:after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+html {
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+min-height: 100%;
+max-width: 100%;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+}
+
+#main {
+	position: relative;
+margin: 0 auto;
+width: 1024px;
+height: 768px;
+transform-origin: 50% 0%;
+overflow: hidden;
+/*background: url("../images/background.png") no-repeat;*/
+background-size: contain;}
+
+
+.logo{
+	position: absolute;
+	top: 50px;
+	left: 280px;
+	height: 150px;
+	width: 400px;
+}

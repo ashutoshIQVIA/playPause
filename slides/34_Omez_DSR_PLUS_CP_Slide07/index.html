@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>slide</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body  id="body-container">
+<div id="main">
+		<div class="bg2"></div>
+
+	<div class="omez_logo" onclick="parent.updateIfram('34_Logo_GP_Slide01')"></div>
+		
+  <div class="mishon"></div>
+
+	<!--<div class="text1"></div>-->
+	<div class="text2"></div>
+	<div class="img2"></div>
+		<div class="bg_final">
+	<div class="logo" onclick="parent.updateIfram('34_Logo_GP_Slide01')"></div>	
+	</div>
+
+</div>
+<script>
+var wrapper = document.getElementById('body-container');
+var outer = document.getElementById('main');
+var maxWidth = outer.clientWidth;
+var maxHeight = outer.clientHeight;
+
+ 
+window.addEventListener("resize", resize);
+resize();
+ 
+
+function resize() {
+    let scale,
+        width = window.innerWidth,
+        height = window.innerHeight;
+    scale = Math.min(width / maxWidth, height / maxHeight);
+    outer.style.transform = 'scale(' + scale + ')';
+}
+$(document).ready(function() {
+		$(".i").on("click",function(){	
+		 $(".i_popup").fadeIn("slow");
+	});
+		$(".close").on("click",function(){	
+		 $(".i_popup").fadeOut("slow");
+	});	
+			  setTimeout(function() { 
+			   $(".img2").fadeOut("slow");
+    }, 6500);
+		  setTimeout(function() { 
+			   $(".text2").fadeIn("slow");
+       $(".mishon").fadeIn("slow");
+    }, 7000);
+	
+	});
+	
+
+</script>
+</body>
+</html>
