@@ -1,7 +1,4 @@
 
-2nd Sep : Included august version
-
-
 10th Auf version :
 - Javascript code fix based on logs on logs_c object
 - Updated time calculation from float to round()
