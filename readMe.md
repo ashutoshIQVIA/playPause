@@ -1,4 +1,5 @@
-In Progress :Play and Pause
+4sep : WIP
+
 2nd Sep : Included august version
 
 10th Auf version :
